@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- <input  value="" th:value="${list}"/>-->
+<!--th:value="${str}"表示要输出的 每个循环的内容
+    th:each="str:${list} 表示遍历的内容-->
+<input th:value="${helloe}" th:each="str:${list}"/>
+
+<a th:href="'javascript:a(\''+${num}+'\')'">点我</a>
+<script language="JavaScript">
+    function a(num) {
+        alert(num)
+    }
+</script>
+</body>
+</html>
